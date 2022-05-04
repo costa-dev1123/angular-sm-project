@@ -1,0 +1,31 @@
+#navbar #logoContainer img{
+    max-width: 100%;
+}
+#navbar #logoContainer{
+    cursor: pointer;
+    width: 30px;
+}
+#navbar a.active{
+    color: white;
+    opacity: 1;
+}
+#navbar a{
+    margin-left: 10px;
+    text-decoration: none;
+    color: white;
+    opacity: .4;
+}
+#navbar a:visited{
+    color: white;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    height: var(--navbar-height);
+    background: var(--primary-color);
+    top: 0;
+    padding: 0 20px;
+    box-sizing: border-box;
+}

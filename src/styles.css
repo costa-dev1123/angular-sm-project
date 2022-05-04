@@ -1,0 +1,15 @@
+@import '~normalize.css/normalize.css';
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap');
+/* You can add global styles to this file, and also import other style files */
+:root{
+    --navbar-height: 50px;
+    --primary-color: #00338f;
+}
+html{
+    font-family: 'Rubik', sans-serif;
+    height: 100%;
+}
+body{
+    height: calc(100% - var(--navbar-height));
+    margin-top: var(--navbar-height);
+}
