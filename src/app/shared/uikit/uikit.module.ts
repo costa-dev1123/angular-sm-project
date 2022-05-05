@@ -3,13 +3,15 @@ import { CommonModule } from '@angular/common';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { RouterModule } from '@angular/router';
 import { ButtonComponent } from './components/button/button.component';
+import { CallToActionComponent } from './components/call-to-action/call-to-action.component';
 
 
 
 @NgModule({
   declarations: [
     NavbarComponent,
-    ButtonComponent
+    ButtonComponent,
+    CallToActionComponent
   ],
   imports: [
     CommonModule,
@@ -17,7 +19,8 @@ import { ButtonComponent } from './components/button/button.component';
   ],
   exports:[
     NavbarComponent,
-    ButtonComponent
+    ButtonComponent,
+    CallToActionComponent
   ]
 })
 export class UikitModule { }

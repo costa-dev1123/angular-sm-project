@@ -3,15 +3,20 @@ import { CommonModule } from '@angular/common';
 
 import { HomeRoutingModule } from './home-routing.module';
 import { HomeComponent } from './home.component';
+import { ImmagineFullScreenComponent } from './immagine-full-screen/immagine-full-screen.component';
+import { UikitModule } from 'src/app/shared/uikit/uikit.module';
+
 
 
 @NgModule({
   declarations: [
-    HomeComponent
+    HomeComponent,
+    ImmagineFullScreenComponent
   ],
   imports: [
     CommonModule,
-    HomeRoutingModule
+    HomeRoutingModule,
+    UikitModule
   ]
 })
 export class HomeModule { }

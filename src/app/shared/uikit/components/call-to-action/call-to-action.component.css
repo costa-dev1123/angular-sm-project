@@ -1,0 +1,14 @@
+.btn{
+    border: 2px solid #fad100;
+    border-radius: 1px;
+    background-color: #e6b600;
+    color: #0f1c50;
+    padding: 0.5rem 1rem ;
+    line-height: 30px;
+    text-align: left;
+    margin-left: 150px;
+    cursor: pointer;
+}
+.arrowIcon{
+   margin-left: 20px;
+}
