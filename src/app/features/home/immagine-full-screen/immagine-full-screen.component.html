@@ -1,7 +1,9 @@
 <div class="container">
     <div class="img">
+        <ng-content select="[contenuto]"></ng-content>
         <h4>TESTO 1</h4>
         <h1>TESTO 2</h1>
-        <app-call-to-action [text]="text" [link]="link"></app-call-to-action>
+        <!-- <app-call-to-action [text]="text" [link]="link"></app-call-to-action> -->
+        <ng-content></ng-content>
     </div>
 </div>
