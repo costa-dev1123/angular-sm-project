@@ -1,0 +1,10 @@
+<div>
+    <ng-content select="[helper]"></ng-content>
+</div>
+
+<div class="card" [ngStyle]="{'background-image': '  url(../../../assets/images/card-background.png), url(' + imgBackground + ')'}">
+<ng-content select="[contentCard]"></ng-content>
+
+        <ng-content></ng-content>
+
+</div>

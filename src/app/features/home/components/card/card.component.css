@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@600&display=swap');
+
+
+.card{
+    width: 100%;
+    height: auto;
+    border: 1 px solid #0b2075;
+    background-color:#0b2075;
+    border-top-right-radius: 3rem;
+    margin: auto;
+    margin-top: 50px;
+    position: relative;
+    padding: 50px;
+    box-sizing: border-box;
+    background-position: top left, center;
+    background-size: cover, cover;
+}

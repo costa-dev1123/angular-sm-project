@@ -1,0 +1,16 @@
+import { Component, Input, OnInit } from '@angular/core';
+
+@Component({
+  selector: 'app-helper-card',
+  templateUrl: './helper-card.component.html',
+  styleUrls: ['./helper-card.component.css']
+})
+export class HelperCardComponent implements OnInit {
+  @Input('imgUrl') imgUrl: string | undefined;
+
+  constructor() { }
+
+  ngOnInit(): void {
+  }
+
+}

@@ -1,4 +1,35 @@
 <app-immagine-full-screen>
     <p contenuto>sono un titolo</p>
-    <app-call-to-action [text]="'CANDIDATI ORA'" [link]="'catalog'"></app-call-to-action>
+    <app-call-to-action [text]="'CANDIDATI ORA'" [link]="'catalog'" [iconClass]="'fa-solid fa-arrow-right'">
+    </app-call-to-action>
 </app-immagine-full-screen>
+<div class="container">
+    <app-helper-card helper
+        [imgUrl]="'https://it.nttdata.com/-/media/project/emea/it/immagini-italia/special_hiring/join_our_dojo/joinourdojo_ninjagroup_hompage.jpg?cx=0.48&cy=0.49&cw=1000&ch=667&hash=8677D03A1DF09CD6F922B44E852DDD41'">
+    </app-helper-card>
+    <div id="mainCard">
+        <app-card>
+
+            <div class="text" cardContent>
+                <span>Testo 1</span>
+                <h2>Testo 2</h2>
+                <h4>Testo 3</h4>
+            </div>
+
+            <app-call-to-action class="btn" [text]="'Candidati'" [link]="'catalog'"
+                [iconClass]="'fa-solid fa-arrow-right'">
+            </app-call-to-action>
+
+        </app-card>
+    </div>
+</div>
+<div id="position">
+    <div *ngFor="let c of cards" class="card">
+        <app-card [imgBackground]="c.img">
+            <div id="textCards" cardContent>
+                <span>Testo 1</span>
+                <h2>Testo 2</h2>
+            </div>
+        </app-card>
+    </div>
+</div>

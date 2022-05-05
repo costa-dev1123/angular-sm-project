@@ -9,6 +9,7 @@ export class CallToActionComponent implements OnInit {
 
   @Input('text') text: string | undefined;
   @Input('link') link: string | undefined;
+  @Input('iconClass') iconClass: string | undefined;
 
   constructor() { }
 
