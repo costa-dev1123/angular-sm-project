@@ -6,7 +6,7 @@
     height: 500px;
 }
 .img{
-    background:  linear-gradient(180deg,rgba(7,14,39,0),#070e27), url('https://it.nttdata.com/-/media/project/emea/it/immagini-italia/home/header_joinourdojo_home5.jpg?cx=0.47&cy=0.64&cw=2000&ch=1124&hash=CDA5CAD6DE6741B2DD073AFA7870B12E');
+    background:  linear-gradient(180deg,rgba(7,14,39,0),#070e27);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -15,18 +15,4 @@
 
 
  
-}
-h1{
-    color: white;
-    margin-left: 150px;
-    font-family: 'Titillium Web', sans-serif;
-}
-h4{
-    margin-left: 150px;
-    padding-top: 200px;
-    color:#6e8af7;
-    font-family: 'Noto Sans', sans-serif;
-}
-#btn{
-    margin-left: 150px;
 }

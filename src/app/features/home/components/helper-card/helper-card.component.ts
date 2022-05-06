@@ -7,6 +7,10 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class HelperCardComponent implements OnInit {
   @Input('imgUrl') imgUrl: string | undefined;
+  @Input('borderBottomr') borderBottomr: string | undefined;
+  @Input('borderBottoml') borderBottoml: string | undefined;
+  @Input('borderTop') borderTop: string | undefined;
+  @Input('position') position: string | undefined;
 
   constructor() { }
 

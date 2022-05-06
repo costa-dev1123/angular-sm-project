@@ -1,4 +1,4 @@
-#mainCard{
+.mainCard{
     width: 600px;
     margin: auto;
     position: relative;
@@ -8,8 +8,6 @@
     display: flex;
     width: 100%;
     height: auto;
-    padding: 30px 0;
-    box-sizing: border-box;
     align-items: center;
     position: relative;
     padding: 20px;
@@ -44,10 +42,143 @@ span{
     margin: 30px;
   
 }
-#position{
+.position{
     display: flex;
     justify-content: center;
 }
-#textCards{
+.textCards{
     margin-top: 200px;
+}
+.textFullScreenh1{
+    color: white;
+    margin-left: 150px;
+    font-family: 'Titillium Web', sans-serif;
+}
+.textFullScreenh4{
+    margin-left: 150px;
+    padding-top: 200px;
+    color:#6e8af7;
+    font-family: 'Noto Sans', sans-serif;
+}
+.firstButton{
+    margin-left: 150px;
+}
+.cardInFullScreen{
+    position: absolute;
+    width: 30%;
+    margin-left: 50vw;
+    margin-top: 20vh;
+
+}
+
+.titleCard{
+    color: #0f1c50;
+    text-align: center;
+    padding-top: 20px;
+
+}
+.bg{
+    background: #f6f8fd;
+}
+.margin{
+    margin-top: 30px;
+}
+
+.lastSection{
+    display: flex;
+    justify-content: space-around;
+    margin: 30px;
+    height: 100%;
+
+}
+.helper{
+    width: 30%;
+    height: 250px;
+    position: absolute;
+    margin-left: 10vw;
+}
+.first{
+    width: 700px;
+    height: 450px;
+    position: relative;
+
+}
+
+.second{
+    display: flex;
+    height: 400px;
+    
+
+}
+#firstCard{
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    margin-top: -2%;
+    margin-left: -2%;
+
+
+}
+
+#secondCard{
+    width: 400px;
+    height: 30%;
+    margin-left: 20%;
+    margin-top: 30px;
+    position: absolute;
+
+}
+#txt{
+    width: 40%;
+}
+h3{
+    color: #0f1c50;
+    font-family: 'Titillium Web', sans-serif;
+}
+p{
+    color: #393939;
+}
+
+.question{
+    background: #6785c1;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 350px;
+}
+#cardCenter{
+    width: 40%;
+
+}
+#link a{
+    color: white;
+    text-decoration: none;
+    /* margin-right: 20px; */
+
+}
+#footer{
+    margin-left: 100px;
+    margin-top: 20px;
+    display: flex;
+    justify-content:space-between;
+    padding-left: 30px;
+}
+#link{
+    display: flex;
+    width: 50%;
+    justify-content:space-between;
+}
+h4{
+    margin: 0;
+}
+#share{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+#share a{
+    color: white;
+    text-decoration: none;
+    margin-left: 20px; 
+
 }

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-immagine-full-screen',
@@ -6,8 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./immagine-full-screen.component.css']
 })
 export class ImmagineFullScreenComponent implements OnInit {
-  text: string = 'CANDIDATI ORA'
-  link: string = 'contacts'
+  
+  @Input('imgUrl') imgUrl: string | undefined;
 
   constructor() { }
 

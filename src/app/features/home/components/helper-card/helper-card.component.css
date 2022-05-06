@@ -1,14 +1,9 @@
 .cardHelper{
-    width: 400px;
-    height: 300px;
-    position: absolute;
+    width: 100%;
+    height: 100%;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    border-bottom-right-radius: 5rem;
-    border-top-right-radius: 5rem;
-    margin-top: 0;
-    margin-left: 15vw;
     z-index: 5;
-    top: 120px;
+
 } 

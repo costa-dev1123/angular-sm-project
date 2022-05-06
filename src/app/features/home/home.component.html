@@ -1,14 +1,23 @@
-<app-immagine-full-screen>
-    <p contenuto>sono un titolo</p>
-    <app-call-to-action [text]="'CANDIDATI ORA'" [link]="'catalog'" [iconClass]="'fa-solid fa-arrow-right'">
+<app-immagine-full-screen
+    [imgUrl]="'https://it.nttdata.com/-/media/project/emea/it/immagini-italia/home/header_joinourdojo_home5.jpg?cx=0.47&cy=0.64&cw=2000&ch=1124&hash=CDA5CAD6DE6741B2DD073AFA7870B12E'">
+    <h4 class="textFullScreenh4">TESTO 1</h4>
+    <h1 class="textFullScreenh1">TESTO 2</h1>
+    <app-call-to-action class="firstButton" [text]="'CANDIDATI ORA'" [link]="'catalog'"
+        [iconClass]="'fa-solid fa-arrow-right'">
     </app-call-to-action>
 </app-immagine-full-screen>
+
+
 <div class="container">
-    <app-helper-card helper
-        [imgUrl]="'https://it.nttdata.com/-/media/project/emea/it/immagini-italia/special_hiring/join_our_dojo/joinourdojo_ninjagroup_hompage.jpg?cx=0.48&cy=0.49&cw=1000&ch=667&hash=8677D03A1DF09CD6F922B44E852DDD41'">
-    </app-helper-card>
-    <div id="mainCard">
-        <app-card>
+    <div class="helper">
+        <app-helper-card helper
+            [imgUrl]="'https://it.nttdata.com/-/media/project/emea/it/immagini-italia/special_hiring/join_our_dojo/joinourdojo_ninjagroup_hompage.jpg?cx=0.48&cy=0.49&cw=1000&ch=667&hash=8677D03A1DF09CD6F922B44E852DDD41'"
+            [borderBottomr]="'5rem'" [borderTop]="'5rem'" [position]="'absolute'">
+
+        </app-helper-card>
+    </div>
+    <div class="mainCard">
+        <app-card [borderTop]="'3rem'">
 
             <div class="text" cardContent>
                 <span>Testo 1</span>
@@ -23,13 +32,164 @@
         </app-card>
     </div>
 </div>
-<div id="position">
+
+<div class="position">
     <div *ngFor="let c of cards" class="card">
-        <app-card [imgBackground]="c.img">
-            <div id="textCards" cardContent>
+        <app-card [imgBackground]="c.img" [borderTop]="'3rem'">
+            <div class="textCards" cardContent>
                 <span>Testo 1</span>
                 <h2>Testo 2</h2>
             </div>
         </app-card>
     </div>
 </div>
+
+<div class="container">
+    <div class="helper">
+        <app-helper-card helper
+            [imgUrl]="'https://it.nttdata.com/-/media/project/emea/it/immagini-italia/cxo-magazine/nttd-cxo-6_new.jpg?cx=0.5&cy=0.5&cw=1000&ch=667&hash=C393A5D2029E6CACC89FC571939690C2'"
+            [borderBottomr]="'5rem'" [borderTop]="'5rem'" [position]="'absolute'">
+        </app-helper-card>
+    </div>
+    <div class="mainCard">
+        <app-card [borderTop]="'3rem'">
+
+            <div class="text" cardContent>
+                <span>Testo 1</span>
+                <h2>Testo 2</h2>
+                <h4>Testo 3</h4>
+            </div>
+
+            <app-call-to-action class="btn" [text]="'Leggi il magazine'" [link]="'catalog'"
+                [iconClass]="'fa-solid fa-arrow-right'">
+            </app-call-to-action>
+
+        </app-card>
+    </div>
+</div>
+
+<app-immagine-full-screen
+    [imgUrl]="'https://it.nttdata.com/-/media/project/emea/it/immagini-italia/home/home_insurance.png?cx=0.5&cy=0.5&cw=2000&ch=1124&hash=3CBF10D5F283C0773E3D658605512E72'">
+
+    <app-card class="cardInFullScreen" [borderTop]="'3rem'">
+        <div cardContent>
+            <span>Testo 1</span>
+            <h2>Testo 2</h2>
+            <h4>Testo 3</h4>
+        </div>
+    </app-card>
+
+</app-immagine-full-screen>
+
+<div class="bg">
+    <h1 class="titleCard">Titolo</h1>
+    <div class="position">
+
+        <div *ngFor="let c of otherCards" class="card">
+            <app-card [imgBackground]="c.img" [borderTop]="'3rem'">
+                <div class="textCards" cardContent>
+                    <span>Testo 1</span>
+                    <h2>Testo 2</h2>
+                </div>
+            </app-card>
+        </div>
+    </div>
+</div>
+
+<div>
+    <h1 class="titleCard">Titolo</h1>
+    <div class="position">
+
+        <div *ngFor="let c of imgLatestCards" class="card">
+            <app-card [imgBackground]="c.img" [borderTop]="'3rem'">
+                <div class="textCards" cardContent>
+                    <span>Testo 1</span>
+                    <h2>Testo 2</h2>
+                </div>
+            </app-card>
+        </div>
+    </div>
+</div>
+
+<div class="margin">
+    <app-immagine-full-screen
+        [imgUrl]="'https://it.nttdata.com/-/media/project/emea/it/immagini-italia/career/join-the-smile-working/homepage-jtsw/e_box_lungo_1920x1080_luchetti.jpg?cx=0.03&cy=0.54&cw=2000&ch=1124&hash=04EFECE97EE9104BCDFDE5E5E5891325'">
+
+        <app-card class="cardInFullScreen" [borderTop]="'3rem'">
+            <div cardContent>
+                <span>Testo 1</span>
+                <h2>Testo 2</h2>
+                <h4>Testo 3</h4>
+            </div>
+        </app-card>
+
+    </app-immagine-full-screen>
+</div>
+
+<div class="lastSection">
+    <div>
+        <div class="first">
+            <app-helper-card helper
+                [imgUrl]="'https://it.nttdata.com/-/media/project/emea/it/immagini-italia/home/ntt-data-servizi-e-consulenza-imprese.jpg?h=525&iar=0&w=700&hash=A4719680ED86A43C52159419D6CD19B8'"
+                [borderTop]="'5rem'">
+            </app-helper-card>
+        </div>
+        <div class="second">
+            <div id="firstCard">
+                <app-helper-card helper
+                    [imgUrl]="'https://it.nttdata.com/-/media/project/emea/it/immagini-italia/home/ntt-data-italia-per-il-business.jpg?h=638&iar=0&w=850&hash=D31EEFFCD09F3C700273111708086FCA'"
+                    [borderBottoml]="'3rem'">
+                </app-helper-card>
+            </div>
+            <div id="secondCard">
+
+                <app-helper-card helper
+                    [imgUrl]="'https://it.nttdata.com/-/media/project/emea/it/immagini-italia/home/ntt-data-per-una-societ-sostenibile.jpg?h=630&iar=0&w=840&hash=E387403009E2366BD74031AD3E868884'"
+                    [borderBottomr]="'5rem'" [borderTop]="'5rem'">
+                </app-helper-card>
+            </div>
+        </div>
+    </div>
+
+    <div id="txt">
+        <span>Testo 1</span>
+        <h3>Testo 2</h3>
+        <p>Testo 3</p>
+    </div>
+
+</div>
+
+
+<div class="question">
+    <div id="cardCenter">
+        <app-card>
+            <div cardContent>
+
+                <h2>Testo 1</h2>
+
+            </div>
+            <app-call-to-action [text]="'CONTATTACI'" [link]="'catalog'" [iconClass]="'fa-solid fa-arrow-right'">
+            </app-call-to-action>
+        </app-card>
+
+    </div>
+</div>
+
+<app-footer>
+    <div id="footer" footerContent  appHighlight>
+        <div id="link">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+            <a href="#">Link 4</a>
+            <a href="#">Link 5</a>
+        </div>
+        <div id="share">
+            <h4>Share:</h4>
+
+            <a href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+    </div>
+</app-footer>

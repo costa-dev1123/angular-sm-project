@@ -7,6 +7,8 @@ import { ImmagineFullScreenComponent } from './components/immagine-full-screen/i
 import { UikitModule } from 'src/app/shared/uikit/uikit.module';
 import { CardComponent } from './components/card/card.component';
 import { HelperCardComponent } from './components/helper-card/helper-card.component';
+import { HighlightDirective } from 'src/app/shared/utils/highlight.directive';
+
 
 
 
@@ -15,12 +17,14 @@ import { HelperCardComponent } from './components/helper-card/helper-card.compon
     HomeComponent,
     ImmagineFullScreenComponent,
     CardComponent,
-    HelperCardComponent
+    HelperCardComponent,
+    HighlightDirective
   ],
   imports: [
     CommonModule,
     HomeRoutingModule,
-    UikitModule
+    UikitModule,
+ 
   ]
 })
 export class HomeModule { }

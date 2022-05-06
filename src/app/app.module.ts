@@ -6,9 +6,11 @@ import { AppComponent } from './app.component';
 import { UikitModule } from './shared/uikit/uikit.module';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
+
 
   ],
   imports: [

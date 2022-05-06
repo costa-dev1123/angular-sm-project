@@ -2,7 +2,7 @@
     <ng-content select="[helper]"></ng-content>
 </div>
 
-<div class="card" [ngStyle]="{'background-image': '  url(../../../assets/images/card-background.png), url(' + imgBackground + ')'}">
+<div class="card" [ngStyle]="{'background-image': '  url(../../../assets/images/card-background.png), url(' + imgBackground + ')',  'border-top-right-radius': borderTop}">
 <ng-content select="[contentCard]"></ng-content>
 
         <ng-content></ng-content>

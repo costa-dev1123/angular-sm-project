@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { CatalogRoutingModule } from './catalog-routing.module';
 import { CatalogComponent } from './catalog.component';
+import { UikitModule } from 'src/app/shared/uikit/uikit.module';
 
 
 @NgModule({
@@ -11,7 +12,8 @@ import { CatalogComponent } from './catalog.component';
   ],
   imports: [
     CommonModule,
-    CatalogRoutingModule
+    CatalogRoutingModule,
+    UikitModule
   ]
 })
 export class CatalogModule { }
