@@ -7,6 +7,8 @@ import { UikitModule } from './shared/uikit/uikit.module';
 
 
 
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,7 +18,8 @@ import { UikitModule } from './shared/uikit/uikit.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    UikitModule
+    UikitModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]

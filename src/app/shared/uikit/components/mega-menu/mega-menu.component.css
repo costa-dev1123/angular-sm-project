@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@700&display=swap');
+
+div{
+    width: 100%;
+    height: auto;
+    background-color:  #00338f;
+    top: var(--navbar-height);
+    display: grid;
+    padding: 20px;
+    position: fixed;
+
+}
+
+
+

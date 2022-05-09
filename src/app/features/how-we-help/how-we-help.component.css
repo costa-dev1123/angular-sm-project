@@ -1,0 +1,66 @@
+.textFullScreenh1{
+    color: white;
+    margin-left: 150px;
+    font-family: 'Titillium Web', sans-serif;
+}
+.textFullScreenh4{
+    margin-left: 150px;
+    /* padding-top: 200px; */
+    color: white;
+    opacity: .8;
+    font-family: 'Noto Sans', sans-serif;
+}
+.position{
+    padding-top: 200px;
+}
+.firstButton{
+    margin-left: 150px;
+}
+.helper{
+    width: 50%;
+    height: 300px;
+    margin: 50px;
+}
+.container{
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+.txt{
+    width: 50%;
+    padding: 20px;
+}
+.txt h2{
+    font-size: 3rem;
+    color: #0f1c50;
+    
+
+}
+.txt p{
+    color: #393939;
+
+}
+.bg{
+    background-color: #0f1c50;
+    height: 400px;
+}
+
+#textInFullp{
+    color: white;
+    opacity: .8;
+}
+
+.text{
+    width: 50%;
+    padding: 20px;
+    color:white;
+    margin-left: 60px;
+    margin-top: 30px;
+}
+
+.helperInFull{
+    width: 50%;
+    height: 300px;
+    margin: 50px;
+}

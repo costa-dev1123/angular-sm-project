@@ -5,7 +5,13 @@ import { RouterModule } from '@angular/router';
 import { ButtonComponent } from './components/button/button.component';
 import { CallToActionComponent } from './components/call-to-action/call-to-action.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { HighlightDirective } from '../utils/highlight.directive';
+import { MegaMenuComponent } from './components/mega-menu/mega-menu.component';
+import { LinkService } from './services/link.service';
+import { HttpClientModule } from '@angular/common/http';
+import { ImmagineFullScreenComponent } from './components/immagine-full-screen/immagine-full-screen.component';
+import { HelperCardComponent } from './components/helper-card/helper-card.component';
+
+
 
 
 
@@ -15,17 +21,27 @@ import { HighlightDirective } from '../utils/highlight.directive';
     ButtonComponent,
     CallToActionComponent,
     FooterComponent,
+    MegaMenuComponent,
+    ImmagineFullScreenComponent,
+    HelperCardComponent
+
 
   ],
   imports: [
     CommonModule,
-    RouterModule
+    RouterModule,
+    HttpClientModule
+
   ],
   exports:[
     NavbarComponent,
     ButtonComponent,
     CallToActionComponent, 
-    FooterComponent
-  ]
+    FooterComponent,
+    MegaMenuComponent,
+    ImmagineFullScreenComponent,
+    HelperCardComponent
+  ],
+  providers:[LinkService]
 })
 export class UikitModule { }

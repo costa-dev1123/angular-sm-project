@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap');
 /* You can add global styles to this file, and also import other style files */
 :root{
-    --navbar-height: 50px;
+    --navbar-height: 67px;
     --primary-color: #00338f;
 }
 html{

@@ -8,15 +8,22 @@
 #navbar a.active{
     color: white;
     opacity: 1;
+   /* background-color: linear-gradient(#00338f, white); */
+
 }
 #navbar a{
     margin-left: 10px;
     text-decoration: none;
     color: white;
-    opacity: .4;
+
+
+
+    /* opacity: .4; */
 }
 #navbar a:visited{
     color: white;
+
+    
 }
 #navbar{
     display: flex;
@@ -29,4 +36,55 @@
     padding: 0 20px;
     box-sizing: border-box;
     z-index: 1000;
+}
+.sottolink{
+    --opacity: 1;
+    transition: opacity .3s;
+}
+
+div:hover .sottolink{
+  
+    opacity: .3;
+}
+
+div{
+    transition: opacity .3s;
+}
+
+.sottolink:hover {
+  
+    opacity: 1!important;
+}
+
+.sottolink{
+    color: white;
+    text-decoration: none;
+    padding-bottom: 20px;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    opacity: var(--opacity);
+}
+.showMenu{
+  width: 100%;
+}
+.fa-solid{
+    color: #040e37;
+
+}
+.gradient{
+    background: rgb(9,9,121);
+    background: linear-gradient(0deg, rgb(103, 112, 239) 48%, rgba(255,255,255,0) 100%);
+    height: 10px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+.navbarTextWrapper{
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }

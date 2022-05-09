@@ -1,7 +1,17 @@
 <nav id="navbar">
-    <div [routerLink] = "['']" id="logoContainer">
+    <div [routerLink]="['']" id="logoContainer">
         <img src="../../../../../assets/images/logo-system.png" alt="">
     </div>
-    <a routerLinkActive="active" [routerLink] = "['catalog']">Catalog</a>
-    <a routerLinkActive="active" [routerLink] = "['contacts']">Contacts</a>
+    <div *ngFor="let link of links" class="navbarTextWrapper">
+        <a (mouseover)="showOtherLinks(link)">{{link.title}} <i class="fa-solid fa-chevron-down"></i> </a>
+        <div class="gradient" *ngIf="selectedLink === link"></div>
+    </div>
 </nav>
+<div *ngIf="showMenu" class="showMenu">
+    <app-mega-menu (hideMenu)="hideMenu()" >
+        <div *ngFor="let l of selectedLink?.sottolink">
+            <a class="sottolink"  routerLinkActive="active" [routerLink]="[l.url]">{{l.title}}</a>
+            
+        </div>
+    </app-mega-menu>
+</div>
