@@ -1,0 +1,32 @@
+<div *ngIf="!registered">
+    <h1>Registrazione</h1>
+    <div class="container">
+        <form [formGroup]="form" (ngSubmit)="addUtente(form)">
+            <div class="form">
+                <label for="name"><b>Name:</b></label>
+                <input formControlName="name" name="name" type="text" placeholder="es. Mario">
+            </div>
+            <div class="form">
+                <label for="surname"><b>Surname:</b></label>
+                <input formControlName="surname" name="surname" type="text" placeholder="es. Rossi">
+            </div>
+            <div class="form">
+                <label for="badge"><b>Badge:</b></label>
+                <input formControlName="badge" name="badge" type="text" placeholder="es. 0000">
+            </div>
+            <div class="form">
+                <label for="email"><b>Email:</b></label>
+                <input formControlName="email" name="email" type="text"  placeholder="es. mrossi@sysmanagement.it">
+            </div>
+            <div class="form">
+                <label for="password"><b>Password:</b></label>
+                <input formControlName="password" name="password" type="password"  placeholder="es. 000000">
+            </div>
+            <button type="submit">Registrati</button>
+
+        </form>
+    </div>
+</div>
+<div *ngIf="registered">
+ <p>Complimenti! Ti sei registrato. Controlla la mail per confermare l'account</p>
+</div>

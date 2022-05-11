@@ -1,0 +1,28 @@
+<div *ngIf="loader">
+    <h1>Login</h1>
+    <div class="container" >
+        <form [formGroup]="form" (ngSubmit)="login(form)">
+
+            <div class="form">
+                <label for="email"><b>Email:</b></label>
+                <input formControlName="email" name="email" type="email" placeholder="es. mrossi@sysmanagement.it">
+                <div *ngIf="email?.errors" class="error">
+                    <p> Email non valida</p>
+                </div>
+            </div>
+            <div class="form">
+                <label for="password"><b>Password:</b></label>
+                <input formControlName="password" name="password" type="password" placeholder="es. 000000">
+                <div *ngIf="errorPass" class="error">
+                    <p> {{errorPass}}</p>
+                </div>
+            </div>
+            <button type="submit">Login</button>
+
+
+        </form>
+    </div>
+</div>
+<div *ngIf="!loader">
+    <app-loader></app-loader>
+</div>

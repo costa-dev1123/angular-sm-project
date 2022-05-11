@@ -3,6 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { LogoutComponent } from './features/logout/logout.component';
+import { AuthGuard } from './shared/guards/auth.guard';
 import { UikitModule } from './shared/uikit/uikit.module';
 
 
@@ -21,7 +23,7 @@ import { UikitModule } from './shared/uikit/uikit.module';
     UikitModule,
 
   ],
-  providers: [],
+  providers: [AuthGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
