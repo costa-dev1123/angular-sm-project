@@ -34,4 +34,7 @@ export class LinkService {
        }
     ]
   }
+  getAllUsers(){
+    return this.http.get('https://jsonplaceholder.typicode.com/users')
+  }
 }
