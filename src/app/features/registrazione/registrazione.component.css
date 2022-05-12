@@ -1,0 +1,44 @@
+h1{
+    text-align: center;
+    margin-top: 100px;
+    color:#040e37;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.form{
+    margin-bottom: 10px;
+    display: flex;
+}
+.form label{
+
+    line-height: 30px;
+    width: 100px;
+    margin: 10px;
+    color:#040e37;
+}
+
+.form input{
+    outline: none;
+    height: 30px;
+    line-height: 30px;
+    width: 300px;
+    padding: 0 10px;
+    margin-left: 20px;
+}
+
+button{
+    cursor: pointer;
+    margin-left: 10px;
+    margin-top: 30px;
+    margin-bottom: 5px;
+    width: 200px;
+    height: 30px;
+    border: 1px solid  #00338f;
+    box-shadow: 1px 1px 1px 1px  white;
+    border-radius: 5px;
+    background-color: #00338f;
+    color: white;
+}

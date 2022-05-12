@@ -10,6 +10,9 @@ import { LinkService } from './services/link.service';
 import { HttpClientModule } from '@angular/common/http';
 import { ImmagineFullScreenComponent } from './components/immagine-full-screen/immagine-full-screen.component';
 import { HelperCardComponent } from './components/helper-card/helper-card.component';
+import { LoaderComponent } from './components/loader/loader.component';
+
+
 
 
 
@@ -23,14 +26,15 @@ import { HelperCardComponent } from './components/helper-card/helper-card.compon
     FooterComponent,
     MegaMenuComponent,
     ImmagineFullScreenComponent,
-    HelperCardComponent
+    HelperCardComponent,
+    LoaderComponent
 
 
   ],
   imports: [
     CommonModule,
     RouterModule,
-    HttpClientModule
+    HttpClientModule,
 
   ],
   exports:[
@@ -40,7 +44,8 @@ import { HelperCardComponent } from './components/helper-card/helper-card.compon
     FooterComponent,
     MegaMenuComponent,
     ImmagineFullScreenComponent,
-    HelperCardComponent
+    HelperCardComponent,
+    LoaderComponent
   ],
   providers:[LinkService]
 })

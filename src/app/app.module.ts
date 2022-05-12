@@ -4,6 +4,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HttpAuthInterceptor } from './shared/http.interceptor';
+import { LogoutComponent } from './features/logout/logout.component';
+import { AuthGuard } from './shared/guards/auth.guard';
 import { UikitModule } from './shared/uikit/uikit.module';
 
 
