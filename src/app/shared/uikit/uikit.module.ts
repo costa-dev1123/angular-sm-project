@@ -6,7 +6,6 @@ import { ButtonComponent } from './components/button/button.component';
 import { CallToActionComponent } from './components/call-to-action/call-to-action.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { MegaMenuComponent } from './components/mega-menu/mega-menu.component';
-import { LinkService } from './services/link.service';
 import { HttpClientModule } from '@angular/common/http';
 import { ImmagineFullScreenComponent } from './components/immagine-full-screen/immagine-full-screen.component';
 import { HelperCardComponent } from './components/helper-card/helper-card.component';
@@ -47,6 +46,6 @@ import { LoaderComponent } from './components/loader/loader.component';
     HelperCardComponent,
     LoaderComponent
   ],
-  providers:[LinkService]
+  providers:[]
 })
 export class UikitModule { }

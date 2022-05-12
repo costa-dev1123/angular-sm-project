@@ -88,3 +88,15 @@ div{
     align-items: center;
     justify-content: center;
 }
+
+#navbar button{
+    width: auto;
+    height: 25px;
+    background-color:  #040e37;
+    color: white;
+    border-radius: 5px;
+    border: 1px solid  #040e37;
+    cursor: pointer;
+    justify-content: center;
+
+}

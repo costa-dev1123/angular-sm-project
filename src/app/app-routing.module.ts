@@ -14,7 +14,6 @@ const routes: Routes = [
   { path: 'intelligent-automation', loadChildren: () => import('./features/intelligent-automation/intelligent-automation.module').then(m => m.IntelligentAutomationModule) },
   { path: 'login', loadChildren: () => import('./features/login/login.module').then(m => m.LoginModule) },
   { path: 'registrazione', loadChildren: () => import('./features/registrazione/registrazione.module').then(m => m.RegistrazioneModule) },
-  { path: 'logout', loadChildren: () => import('./features/logout/logout.module').then(m => m.LogoutModule) },
   { path: '**', redirectTo: ''}
 ];
 

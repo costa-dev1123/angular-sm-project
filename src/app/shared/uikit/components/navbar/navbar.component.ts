@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { AuthService } from 'src/app/shared/services/auth.service';
 
-import { LinkService } from '../../services/link.service';
 
 @Component({
   selector: 'navbar',
@@ -9,10 +9,11 @@ import { LinkService } from '../../services/link.service';
 })
 export class NavbarComponent implements OnInit {
 
+  // token:string | any =  localStorage.getItem('token')
   links:  any = [] ;
   showMenu: boolean = false;
   selectedLink:any = {};
-  constructor(private _service: LinkService) { }
+  constructor(private _service:  AuthService) { }
 
   ngOnInit(): void {
 
@@ -28,5 +29,9 @@ export class NavbarComponent implements OnInit {
   hideMenu(){
     this.showMenu = false;
     this.selectedLink = {}
+  }
+
+  logout( ){
+    localStorage.clear()
   }
 }

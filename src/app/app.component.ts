@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { LinkService } from './shared/uikit/services/link.service';
+import { AuthService } from './shared/services/auth.service';
 
 @Component({
   selector: 'app-root',
@@ -8,9 +8,9 @@ import { LinkService } from './shared/uikit/services/link.service';
 })
 export class AppComponent {
   title = 'sm-project';
-  constructor(private linkService:LinkService){}
+  constructor(private _service: AuthService){}
 
   getAllUsers(){
-    this.linkService.getAllUsers().subscribe(console.log);
+    this._service.getAllUsers().subscribe(console.log);
   }
 }

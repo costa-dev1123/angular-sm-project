@@ -8,14 +8,17 @@
         <a (mouseover)="showOtherLinks(link)">{{link.title}} <i class="fa-solid fa-chevron-down"></i> </a>
         <div class="gradient" *ngIf="selectedLink === link"></div>
     </div>
-    
-    
+
+    <button type="button" (click)="logout()">Logout</button>
+
+
+
 </nav>
 <div *ngIf="showMenu" class="showMenu">
-    <app-mega-menu (hideMenu)="hideMenu()" >
+    <app-mega-menu (hideMenu)="hideMenu()">
         <div *ngFor="let l of selectedLink?.sottolink">
-            <a class="sottolink"  routerLinkActive="active" [routerLink]="[l.url]">{{l.title}}</a>
-            
+            <a class="sottolink" routerLinkActive="active" [routerLink]="[l.url]">{{l.title}}</a>
+
         </div>
     </app-mega-menu>
 </div>
