@@ -26,7 +26,8 @@ import { LoaderComponent } from './components/loader/loader.component';
     MegaMenuComponent,
     ImmagineFullScreenComponent,
     HelperCardComponent,
-    LoaderComponent
+    LoaderComponent,
+
 
 
   ],

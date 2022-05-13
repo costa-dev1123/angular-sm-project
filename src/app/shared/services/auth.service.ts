@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { basePath, port } from '../constants';
+import { basePath} from '../constants';
 import { User } from '../interfaces/user';
 
 @Injectable({
@@ -15,15 +15,15 @@ export class AuthService {
 
 
   register(utente: User){
-    return this._http.post(`${basePath}:${port}/api/auth/register`, utente)
+    return this._http.post(`${basePath}/api/auth/register`, utente)
   }
 
   confirm(activationKey: string){
-    return this._http.get(`${basePath}:${port}/api/auth/confirm?activationKey=${activationKey}`)
+    return this._http.get(`${basePath}/api/auth/confirm?activationKey=${activationKey}`)
   }
 
   login(utente: User){
-    return this._http.post(`${basePath}:${port}/api/auth/login`, utente)
+    return this._http.post(`${basePath}/api/auth/login`, utente)
   }
   getAllLinks(){
     return  [
@@ -51,8 +51,12 @@ export class AuthService {
        }
     ]
   }
-  getAllUsers(){
-    return this._http.get('https://jsonplaceholder.typicode.com/users')
+  // getAllUsers(){
+  //   return this._http.get('https://jsonplaceholder.typicode.com/users')
+  // }
+
+  getUserByBadge(badge: string){
+    return this._http.get(`${basePath}/api/auth/${badge}`)
   }
 
 }

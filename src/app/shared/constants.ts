@@ -1,2 +1,2 @@
-export const basePath: string = 'http://10.90.190.150'
+export const basePath: string = 'https://be-system.herokuapp.com'
 export const port: string = '3000'

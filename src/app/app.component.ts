@@ -10,7 +10,7 @@ export class AppComponent {
   title = 'sm-project';
   constructor(private _service: AuthService){}
 
-  getAllUsers(){
-    this._service.getAllUsers().subscribe(console.log);
-  }
+  // getAllUsers(){
+  //   this._service.getAllUsers().subscribe(console.log);
+  // }
 }

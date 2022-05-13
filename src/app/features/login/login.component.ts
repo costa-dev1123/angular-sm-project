@@ -39,7 +39,7 @@ export class LoginComponent implements OnInit {
     this._service.login(form.value).subscribe((data: any) => {
       this.loader = true;
       console.log(data)
-      localStorage.setItem('token', data.token)
+      localStorage.setItem('token', `Bearer ${data.token}`)
       this._router.navigate(['']);
 
     } , err => this.errorPass = err.error.message)

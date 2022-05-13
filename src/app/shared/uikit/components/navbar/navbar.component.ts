@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { AuthService } from 'src/app/shared/services/auth.service';
 
 
@@ -13,7 +14,7 @@ export class NavbarComponent implements OnInit {
   links:  any = [] ;
   showMenu: boolean = false;
   selectedLink:any = {};
-  constructor(private _service:  AuthService) { }
+  constructor(private _service:  AuthService, private router: Router) { }
 
   ngOnInit(): void {
 
@@ -32,6 +33,7 @@ export class NavbarComponent implements OnInit {
   }
 
   logout( ){
-    localStorage.clear()
+    localStorage.clear();
+    this.router.navigate(['login'])
   }
 }

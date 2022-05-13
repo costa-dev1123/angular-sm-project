@@ -1,1 +1,24 @@
-<p>data-intelligence works!</p>
+<div id="input">
+    <h2>Cerca i dipendenti tramite il n. di badge</h2>
+    <input type="text" #userBadge>
+    <button type="button" disabled="{{userBadge.value === ''}}" (click)="showByBadge(userBadge.value)">Cerca</button>
+</div>
+
+
+
+<div  *ngIf="userBadge">
+    <h3 id="lista">Lista dipendenti</h3>
+    <div id="grid">
+        <div *ngFor="let u of userByBadge">
+            <div class="card">
+                <div id="container">
+                    <img id="img" src="https://doodleipsum.com/150x150/flat?i=35b6a5ded7bc69c4ca705e3926c32749">
+                </div>
+                <p class="name"><b>Nome: </b>{{u.name}}</p>
+                <p class="name"><b>Cognome: </b>{{u.surname}}</p>
+                <p class="name"><b>Badge n.: </b>{{u.badge}}</p>
+                <p class="name"><b>Email: </b>{{u.email}}</p>
+            </div>
+        </div>
+    </div>
+</div>

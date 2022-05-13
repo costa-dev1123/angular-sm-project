@@ -5,7 +5,7 @@
     <a [routerLink]="['registrazione']">Registrazione</a>
     <a [routerLink]="['login']">Login</a>
     <div *ngFor="let link of links" class="navbarTextWrapper">
-        <a (mouseover)="showOtherLinks(link)">{{link.title}} <i class="fa-solid fa-chevron-down"></i> </a>
+        <a  (mouseover)="showOtherLinks(link)">{{link.title}} <i class="fa-solid fa-chevron-down"></i> </a>
         <div class="gradient" *ngIf="selectedLink === link"></div>
     </div>
 
